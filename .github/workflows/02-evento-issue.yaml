@@ -1,7 +1,7 @@
 name: 02 - Eventos Issue
 on:
     push:
-    issue:
+    issues:
         types:
         - opened
 jobs:
