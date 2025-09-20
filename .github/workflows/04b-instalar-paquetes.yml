@@ -1,11 +1,11 @@
 name: 04b - Instalar Paquetes
 on:
   push:
-    branches: ["main"]
+    branches: [ "main" ]
   workflow_dispatch:
 jobs:
   build:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: action/checkout@v4
       - name: Check node version
