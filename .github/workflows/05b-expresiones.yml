@@ -1,0 +1,13 @@
+name: 05b - expresiones
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+jobs:
+    info-runner:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Verificar OS y arquitectura
+          run: |
+            echo "Sistema Operativo: ${{ runner.os }}"
+            echo "Arquitectura del sistema: ${{ runner.arch }}"
